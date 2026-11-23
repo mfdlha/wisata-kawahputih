@@ -1,0 +1,1137 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panduan wisata Kawah Putih di Ciwidey, Bandung: informasi danau kawah, daya tarik, galeri, tips kunjungan, dan lokasi.">
+  <title>Kawah Putih Ciwidey | Panduan Wisata</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Tampilan khusus panduan pengalaman di Jelajahi */
+    .experience-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr) minmax(240px, 0.85fr);
+      gap: 28px;
+      padding: 34px 8px;
+      border-bottom: 1px solid var(--line);
+      align-items: start;
+    }
+
+    .experience-number {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 42px;
+      line-height: 1;
+      color: var(--copper);
+    }
+
+    .experience-item .card-label {
+      margin-bottom: 10px;
+    }
+
+    .experience-item h3 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(26px, 2.8vw, 34px);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--forest);
+      margin-bottom: 14px;
+    }
+
+    .experience-description {
+      max-width: 470px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .experience-facts {
+      padding-left: 28px;
+      border-left: 1px solid var(--line);
+      display: grid;
+      gap: 14px;
+    }
+
+    .experience-fact-label {
+      color: var(--forest);
+      font-size: 11px;
+      letter-spacing: .09em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 3px;
+    }
+
+    .experience-fact-text {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .experience-tips {
+      margin-top: 4px;
+      border-top: 1px solid var(--line);
+      padding-top: 13px;
+    }
+
+    .experience-tips summary {
+      cursor: pointer;
+      color: var(--forest);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .experience-tips summary:hover {
+      text-decoration: underline;
+    }
+
+    .experience-tips p {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .experience-note {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 25px;
+      padding: 21px 24px;
+      background: var(--mint);
+      border-radius: 7px;
+    }
+
+    .experience-note p {
+      max-width: 700px;
+      margin: 0;
+      color: #4f5b53;
+      font-size: 13px;
+    }
+
+    .experience-note a {
+      flex-shrink: 0;
+      color: var(--forest);
+      font-weight: 700;
+      font-size: 13px;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 860px) {
+      .experience-item {
+        grid-template-columns: 50px 1fr;
+        gap: 18px;
+      }
+
+      .experience-facts {
+        grid-column: 2;
+        border-left: 0;
+        padding-left: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .experience-tips {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .experience-item {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+        padding: 27px 0;
+      }
+
+      .experience-number {
+        font-size: 28px;
+      }
+
+      .experience-facts {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .experience-note {
+        padding: 20px;
+      }
+    }
+  </style>
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- 01. HEADER DAN NAVIGASI -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#beranda"
+         aria-label="Kawah Putih, kembali ke beranda">
+        <span class="brand-name">KAWAH PUTIH</span>
+        <span class="brand-caption">CIWIDEY — BANDUNG</span>
+      </a>
+
+      <button class="menu-toggle"
+              id="menu-toggle"
+              type="button"
+              aria-label="Buka menu navigasi"
+              aria-controls="main-nav"
+              aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav"
+           id="main-nav"
+           aria-label="Navigasi utama">
+        <a class="nav-link is-active"
+           href="#beranda"
+           aria-current="page">Beranda</a>
+        <a class="nav-link" href="#tentang">Tentang</a>
+        <a class="nav-link" href="#jelajahi">Jelajahi</a>
+        <a class="nav-link" href="#galeri">Galeri</a>
+        <a class="nav-link" href="#panduan">
+          Panduan &amp; Lokasi
+        </a>
+      </nav>
+
+      <a class="button button-primary header-cta"
+         href="#panduan">
+        Rencanakan Kunjungan
+        <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 02. BERANDA -->
+    <section class="hero section"
+             id="beranda"
+             aria-labelledby="hero-title">
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <p class="eyebrow">
+            CIWIDEY, KABUPATEN BANDUNG
+          </p>
+
+          <h1 id="hero-title">
+            Kawah Putih, lanskap vulkanik
+            di selatan Bandung.
+          </h1>
+
+          <p class="hero-description">
+            Jelajahi danau kawah Gunung Patuha
+            yang dikenal dengan warna airnya
+            yang berubah-ubah, udara pegunungan
+            yang sejuk, dan pemandangan berkabut.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary"
+               href="#jelajahi">
+              Jelajahi Kawah Putih
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button-secondary"
+               href="#galeri">
+              Lihat Galeri
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <p class="hero-note">
+            Satu destinasi, beberapa sudut
+            untuk dijelajahi.
+          </p>
+
+        </div>
+
+        <figure class="hero-figure">
+          <div class="media-frame media-frame-hero is-loading">
+
+            <img
+              src="images/kawah.jpeg"
+              alt="Panorama danau Kawah Putih dan perbukitan di kawasan Gunung Patuha"
+              fetchpriority="high">
+
+            <span class="media-fallback" role="status">
+              Foto panorama Kawah Putih belum tersedia.
+            </span>
+
+          </div>
+
+          <figcaption>
+            Panorama Kawah Putih —
+            Ciwidey, Kabupaten Bandung
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- 03. TENTANG -->
+    <section class="section section-about"
+             id="tentang"
+             aria-labelledby="about-title">
+
+      <div class="container about-grid">
+
+        <figure class="about-figure">
+          <div class="media-frame media-frame-about is-loading">
+            <img
+              src="images/danau_kawah.jpeg"
+              alt="Danau vulkanik Kawah Putih dengan bentang alam di sekelilingnya"
+              loading="lazy">
+
+            <span class="media-fallback" role="status">
+              Foto danau Kawah Putih belum tersedia.
+            </span>
+          </div>
+
+          <figcaption>
+            Danau kawah Gunung Patuha
+          </figcaption>
+        </figure>
+
+        <div class="about-content">
+
+          <p class="eyebrow">MENGENAL DESTINASI</p>
+
+          <h2 id="about-title">
+            Mengenal Kawah Putih
+          </h2>
+
+          <div class="section-rule"></div>
+
+          <p>
+            Kawah Putih adalah danau kawah
+            vulkanik di kawasan Gunung Patuha,
+            wilayah Ciwidey/Rancabali,
+            Kabupaten Bandung, Jawa Barat.
+          </p>
+
+          <p>
+            Permukaan airnya dapat tampak putih
+            kehijauan atau memiliki rona berbeda
+            mengikuti kondisi alam. Lanskap danau,
+            pegunungan, dan kabut menjadi ciri khas
+            tempat ini.
+          </p>
+
+          <p class="location-label">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false">
+              <path
+                d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 16 0Z">
+              </path>
+              <circle cx="12" cy="10" r="2.5"></circle>
+            </svg>
+
+            <span>
+              Rancabali / Ciwidey,
+              Kabupaten Bandung
+            </span>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. JELAJAHI: PANDUAN MEMILIH PENGALAMAN -->
+    <section class="section section-attractions"
+             id="jelajahi"
+             aria-labelledby="attractions-title">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PILIH PENGALAMANMU</p>
+            <h2 id="attractions-title">
+              Apa yang Ingin Kamu Lakukan?
+            </h2>
+          </div>
+
+          <p>
+            Kenali aktivitas, suasana, dan hal penting
+            pada setiap area sebelum memilih
+            tujuan kunjungan.
+          </p>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Pengalaman 01: Danau Kawah -->
+          <article class="experience-item">
+
+            <span class="experience-number"
+                  aria-hidden="true">01</span>
+
+            <div class="experience-main">
+              <p class="card-label">PANORAMA DANAU</p>
+              <h3>Danau Kawah</h3>
+
+              <p class="experience-description">
+                Nikmati warna khas air danau vulkanik,
+                bentang tebing, dan suasana Kawah Putih
+                dari area pengunjung yang diizinkan.
+              </p>
+
+              <button class="text-button detail-trigger"
+                      type="button"
+                      data-detail="danau">
+                Lihat Info &amp; Foto
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="experience-facts">
+
+              <div>
+                <p class="experience-fact-label">
+                  Cocok untuk
+                </p>
+                <p class="experience-fact-text">
+                  Menikmati lanskap dan fotografi alam.
+                </p>
+              </div>
+
+              <div>
+                <p class="experience-fact-label">
+                  Perlu diperhatikan
+                </p>
+                <p class="experience-fact-text">
+                  Kawasan mengandung gas belerang.
+                  Tetap di jalur aman dan ikuti arahan petugas.
+                </p>
+              </div>
+
+              <details class="experience-tips">
+                <summary>Tips sebelum ke danau</summary>
+                <p>
+                  Siapkan jaket, hindari menyentuh air kawah,
+                  dan segera menjauh jika merasa tidak nyaman
+                  dengan udara sekitar.
+                </p>
+              </details>
+
+            </div>
+          </article>
+
+          <!-- Pengalaman 02: Skywalk Cantigi -->
+          <article class="experience-item">
+
+            <span class="experience-number"
+                  aria-hidden="true">02</span>
+
+            <div class="experience-main">
+              <p class="card-label">JALUR PANDANG</p>
+              <h3>Skywalk Cantigi</h3>
+
+              <p class="experience-description">
+                Jelajahi jalur pandang di antara
+                vegetasi cantigi untuk melihat
+                kawasan kawah dari sudut yang lebih tinggi.
+              </p>
+
+              <button class="text-button detail-trigger"
+                      type="button"
+                      data-detail="skywalk">
+                Lihat Info &amp; Foto
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="experience-facts">
+
+              <div>
+                <p class="experience-fact-label">
+                  Cocok untuk
+                </p>
+                <p class="experience-fact-text">
+                  Pengunjung yang menyukai berjalan kaki
+                  dan sudut pandang berbeda.
+                </p>
+              </div>
+
+              <div>
+                <p class="experience-fact-label">
+                  Perlu diperhatikan
+                </p>
+                <p class="experience-fact-text">
+                  Kondisi jalur dan akses bisa berubah
+                  mengikuti cuaca serta kebijakan pengelola.
+                </p>
+              </div>
+
+              <details class="experience-tips">
+                <summary>Tips sebelum ke Skywalk</summary>
+                <p>
+                  Gunakan alas kaki dengan daya cengkeram baik.
+                  Tanyakan lebih dahulu apakah jalur dibuka
+                  dan aman dilalui.
+                </p>
+              </details>
+
+            </div>
+          </article>
+
+          <!-- Pengalaman 03: Sunan Ibu -->
+          <article class="experience-item">
+
+            <span class="experience-number"
+                  aria-hidden="true">03</span>
+
+            <div class="experience-main">
+              <p class="card-label">TITIK PANDANG</p>
+              <h3>Panorama Sunan Ibu</h3>
+
+              <p class="experience-description">
+                Saksikan lanskap kawah dan perbukitan
+                dari ketinggian. Tempat ini dikenal
+                sebagai salah satu sudut untuk menikmati
+                suasana pagi.
+              </p>
+
+              <button class="text-button detail-trigger"
+                      type="button"
+                      data-detail="sunan">
+                Lihat Info &amp; Foto
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="experience-facts">
+
+              <div>
+                <p class="experience-fact-label">
+                  Cocok untuk
+                </p>
+                <p class="experience-fact-text">
+                  Panorama pegunungan dan
+                  fotografi pemandangan luas.
+                </p>
+              </div>
+
+              <div>
+                <p class="experience-fact-label">
+                  Perlu diperhatikan
+                </p>
+                <p class="experience-fact-text">
+                  Jika ingin melihat matahari terbit,
+                  konfirmasi akses pagi, cuaca,
+                  dan aturan kunjungan lebih dahulu.
+                </p>
+              </div>
+
+              <details class="experience-tips">
+                <summary>Tips sebelum ke Sunan Ibu</summary>
+                <p>
+                  Bawa pakaian hangat dan periksa
+                  kondisi jalur. Panorama dapat tertutup
+                  kabut sewaktu-waktu.
+                </p>
+              </details>
+
+            </div>
+          </article>
+
+        </div>
+
+        <div class="experience-note">
+          <p>
+            <strong>Catatan kunjungan:</strong>
+            akses lokasi, kemungkinan biaya tambahan,
+            dan kondisi cuaca dapat berubah.
+            Periksa informasi terbaru sebelum berangkat.
+          </p>
+
+          <a href="#panduan">
+            Baca Panduan &amp; Lokasi ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 05. GALERI FOTO -->
+    <section class="section section-gallery"
+             id="galeri"
+             aria-labelledby="gallery-title">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">GALERI FOTO</p>
+            <h2 id="gallery-title">Potret Kawah Putih</h2>
+          </div>
+
+          <p>
+            Jelajahi suasana danau, jalur, dan perbukitan
+            melalui foto. Klik gambar untuk memperbesarnya.
+          </p>
+        </div>
+
+        <!-- Filter Galeri -->
+        <div class="gallery-filters"
+             role="group"
+             aria-label="Filter kategori galeri">
+
+          <button class="filter-button is-selected"
+                  type="button"
+                  data-filter="semua"
+                  aria-pressed="true">
+            Semua
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="danau"
+                  aria-pressed="false">
+            Danau
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="panorama"
+                  aria-pressed="false">
+            Panorama
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="jalur"
+                  aria-pressed="false">
+            Jalur Wisata
+          </button>
+
+        </div>
+
+        <div class="gallery-grid">
+
+          <!-- Galeri 1 -->
+          <figure class="gallery-item"
+                  data-category="danau">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-1.jpg"
+                    data-title="Tepi danau Kawah Putih"
+                    data-alt="Lanskap tepian danau Kawah Putih"
+                    aria-label="Perbesar foto tepi danau Kawah Putih">
+
+              <span class="media-frame is-loading">
+                <img
+                  src="images/galeri-1.jpg"
+                  alt="Lanskap tepian danau Kawah Putih"
+                  loading="lazy">
+
+                <span class="media-fallback">
+                  Foto galeri belum tersedia.
+                </span>
+              </span>
+            </button>
+
+            <figcaption>
+              Tepi danau
+              <span>Danau</span>
+            </figcaption>
+          </figure>
+
+          <!-- Galeri 2 -->
+          <figure class="gallery-item"
+                  data-category="danau">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-2.jpg"
+                    data-title="Warna air Kawah Putih"
+                    data-alt="Danau Kawah Putih dengan air pucat"
+                    aria-label="Perbesar foto warna air Kawah Putih">
+
+              <span class="media-frame is-loading">
+                <img
+                  src="images/galeri-2.jpg"
+                  alt="Danau Kawah Putih dengan air pucat"
+                  loading="lazy">
+
+                <span class="media-fallback">
+                  Foto galeri belum tersedia.
+                </span>
+              </span>
+            </button>
+
+            <figcaption>
+              Warna air kawah
+              <span>Danau</span>
+            </figcaption>
+          </figure>
+
+          <!-- Galeri 3 -->
+          <figure class="gallery-item"
+                  data-category="jalur">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-3.jpg"
+                    data-title="Jalur menuju kawasan kawah"
+                    data-alt="Jalur akses menuju Kawah Putih"
+                    aria-label="Perbesar foto jalur menuju kawah">
+
+              <span class="media-frame is-loading">
+                <img
+                  src="images/galeri-3.jpg"
+                  alt="Jalur akses menuju Kawah Putih"
+                  loading="lazy">
+
+                <span class="media-fallback">
+                  Foto galeri belum tersedia.
+                </span>
+              </span>
+            </button>
+
+            <figcaption>
+              Jalur menuju kawah
+              <span>Jalur Wisata</span>
+            </figcaption>
+          </figure>
+
+          <!-- Galeri 4 -->
+          <figure class="gallery-item"
+                  data-category="panorama">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-4.jpg"
+                    data-title="Panorama dari Sunan Ibu"
+                    data-alt="Panorama alam dari kawasan Sunan Ibu"
+                    aria-label="Perbesar foto panorama dari Sunan Ibu">
+
+              <span class="media-frame is-loading">
+                <img
+                  src="images/galeri-4.jpg"
+                  alt="Panorama alam dari kawasan Sunan Ibu"
+                  loading="lazy">
+
+                <span class="media-fallback">
+                  Foto galeri belum tersedia.
+                </span>
+              </span>
+            </button>
+
+            <figcaption>
+              Pemandangan Sunan Ibu
+              <span>Panorama</span>
+            </figcaption>
+          </figure>
+
+          <!-- Galeri 5 -->
+          <figure class="gallery-item"
+                  data-category="panorama">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/hero-kawah-putih.jpg"
+                    data-title="Lanskap Kawah Putih"
+                    data-alt="Panorama luas danau Kawah Putih"
+                    aria-label="Perbesar foto lanskap Kawah Putih">
+
+              <span class="media-frame is-loading">
+                <img
+                  src="images/hero-kawah-putih.jpg"
+                  alt="Panorama luas danau Kawah Putih"
+                  loading="lazy">
+
+                <span class="media-fallback">
+                  Foto galeri belum tersedia.
+                </span>
+              </span>
+            </button>
+
+            <figcaption>
+              Lanskap kawah
+              <span>Panorama</span>
+            </figcaption>
+          </figure>
+
+          <!-- Galeri 6 -->
+          <figure class="gallery-item"
+                  data-category="panorama">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/sunan-ibu.jpg"
+                    data-title="Kabut di Sunan Ibu"
+                    data-alt="Pemandangan berkabut di Panorama Sunan Ibu"
+                    aria-label="Perbesar foto kabut di Sunan Ibu">
+
+              <span class="media-frame is-loading">
+                <img
+                  src="images/sunan-ibu.jpg"
+                  alt="Pemandangan berkabut di Panorama Sunan Ibu"
+                  loading="lazy">
+
+                <span class="media-fallback">
+                  Foto galeri belum tersedia.
+                </span>
+              </span>
+            </button>
+
+            <figcaption>
+              Kabut pegunungan
+              <span>Panorama</span>
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <p class="gallery-status"
+           id="gallery-status"
+           role="status"
+           aria-live="polite">
+          Menampilkan 6 item galeri.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 06. PANDUAN DAN LOKASI -->
+    <section class="section section-guide"
+             id="panduan"
+             aria-labelledby="guide-title">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              RENCANAKAN KUNJUNGAN
+            </p>
+            <h2 id="guide-title">
+              Sebelum Berkunjung
+            </h2>
+          </div>
+
+          <p>
+            Informasi praktis untuk membantu
+            menyiapkan perjalanan menuju Kawah Putih.
+          </p>
+        </div>
+
+        <div class="guide-grid">
+
+          <div class="guide-main">
+
+            <div class="guide-block">
+              <h3>Lokasi dan akses</h3>
+              <p>
+                Kawah Putih berada di kawasan
+                Rancabali/Ciwidey, Kabupaten Bandung.
+                Dari Bandung, perjalanan umumnya
+                menuju arah Soreang dan Ciwidey
+                sebelum mengikuti petunjuk
+                menuju kawasan wisata.
+              </p>
+            </div>
+
+            <div class="guide-block">
+              <h3>Tiket dan jam operasional</h3>
+              <p>
+                Harga tiket dan jam operasional
+                dapat berubah. Pastikan informasi
+                terbaru melalui pengelola wisata
+                sebelum berkunjung.
+              </p>
+            </div>
+
+            <div class="guide-block">
+              <h3>Tips berkunjung</h3>
+
+              <ul class="tips-list">
+                <li>
+                  Gunakan pakaian hangat
+                  dan alas kaki yang nyaman.
+                </li>
+                <li>
+                  Perhatikan cuaca, kabut,
+                  dan kondisi jalur.
+                </li>
+                <li>
+                  Ikuti petunjuk keselamatan
+                  serta batasan dari pengelola.
+                </li>
+                <li>
+                  Hindari terlalu lama berada
+                  di area dengan paparan gas belerang.
+                </li>
+                <li>
+                  Jaga kebersihan dan jangan
+                  membuang sampah sembarangan.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- FAQ -->
+          <aside class="faq-panel"
+                 aria-labelledby="faq-title">
+
+            <p class="eyebrow">
+              PERTANYAAN UMUM
+            </p>
+
+            <h3 id="faq-title">
+              Yang perlu diketahui
+            </h3>
+
+            <details>
+              <summary>
+                Apakah harus membawa jaket?
+              </summary>
+              <p>
+                Disarankan membawa jaket atau
+                pakaian hangat karena area Kawah Putih
+                berada di dataran tinggi.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Apakah harga tiket selalu sama?
+              </summary>
+              <p>
+                Belum tentu. Periksa tarif terkini
+                melalui informasi resmi pengelola
+                sebelum berangkat.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Bagaimana jika cuaca berkabut?
+              </summary>
+              <p>
+                Perhatikan jarak pandang,
+                tetap di jalur yang diizinkan,
+                dan patuhi arahan petugas kawasan.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Apakah perlu memperhatikan gas belerang?
+              </summary>
+              <p>
+                Ya. Ikuti informasi keselamatan
+                setempat dan segera menjauh
+                jika merasa tidak nyaman.
+              </p>
+            </details>
+
+          </aside>
+        </div>
+
+        <!-- LOKASI -->
+        <div class="location-panel"
+             id="lokasi"
+             aria-labelledby="location-title">
+
+          <div>
+            <p class="eyebrow">
+              LOKASI DESTINASI
+            </p>
+
+            <h3 id="location-title">
+              Temukan Lokasinya
+            </h3>
+
+            <p>
+              <strong>Kawah Putih</strong><br>
+              Rancabali / Ciwidey,
+              Kabupaten Bandung,
+              Jawa Barat, Indonesia.
+            </p>
+
+            <p>
+              Gunakan tautan peta untuk
+              mencari lokasi dan menentukan
+              rute dari tempat keberangkatanmu.
+            </p>
+          </div>
+
+          <a class="button button-primary"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Kawah%20Putih%20Ciwidey%20Bandung"
+             target="_blank"
+             rel="noopener noreferrer">
+            Buka Google Maps
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 07. FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-brand">
+          KAWAH PUTIH
+        </p>
+        <p>
+          Website informasi wisata Kawah Putih
+          di kawasan Ciwidey,
+          Kabupaten Bandung.
+        </p>
+      </div>
+
+      <div>
+        <h2>Navigasi</h2>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#jelajahi">Jelajahi</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#panduan">Panduan &amp; Lokasi</a>
+      </div>
+
+      <div>
+        <h2>Informasi</h2>
+
+        <p>
+          Rancabali / Ciwidey<br>
+          Kabupaten Bandung, Jawa Barat
+        </p>
+
+        <p>
+          Nikmati panorama danau vulkanik,
+          udara pegunungan, dan keindahan
+          alam kawasan Gunung Patuha.
+        </p>
+
+        <p class="photo-credit">
+          Periksa informasi tiket, jam operasional,
+          dan kondisi kawasan sebelum berkunjung.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>
+        © 2026 Kawah Putih. Pesona Alam Ciwidey.
+      </span>
+
+      <span>
+        Informasi destinasi dapat berubah
+        mengikuti kondisi dan kebijakan kawasan.
+      </span>
+    </div>
+
+  </footer>
+
+  <!-- 08. MODAL DETAIL WISATA -->
+  <dialog class="site-dialog"
+          id="detail-dialog"
+          aria-labelledby="detail-title">
+
+    <div class="dialog-content">
+
+      <button class="dialog-close"
+              type="button"
+              data-close-dialog
+              aria-label="Tutup detail wisata">
+        ×
+      </button>
+
+      <div class="media-frame dialog-image is-error"
+           id="detail-image-frame">
+
+        <img id="detail-image" alt="">
+
+        <span class="media-fallback" role="status">
+          Foto detail belum tersedia.
+        </span>
+      </div>
+
+      <div class="dialog-text">
+        <p class="card-label"
+           id="detail-category"></p>
+
+        <h2 id="detail-title"></h2>
+
+        <p id="detail-description"></p>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- 09. LIGHTBOX GALERI -->
+  <dialog class="site-dialog gallery-dialog"
+          id="gallery-dialog"
+          aria-labelledby="gallery-dialog-title">
+
+    <div class="dialog-content">
+
+      <button class="dialog-close"
+              type="button"
+              data-close-dialog
+              aria-label="Tutup foto galeri">
+        ×
+      </button>
+
+      <div class="media-frame dialog-image is-error"
+           id="gallery-image-frame">
+
+        <img id="gallery-dialog-image" alt="">
+
+        <span class="media-fallback" role="status">
+          Foto galeri belum tersedia.
+        </span>
+      </div>
+
+      <div class="dialog-text">
+        <h2 id="gallery-dialog-title"></h2>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- 10. KEMBALI KE ATAS -->
+  <button class="back-to-top"
+          id="back-to-top"
+          type="button"
+          aria-label="Kembali ke atas"
+          hidden>
+    ↑
+  </button>
+
+</body>
+</html>
