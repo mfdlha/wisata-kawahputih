@@ -370,13 +370,17 @@ p {
 }
 
 .header-cta {
-  flex-shrink: 0;
-  width: 208px;
-  min-width: 208px;
-  padding-inline: 14px;
-  font-family: var(--font-body);
-  font-size: 12px;
-  white-space: nowrap;
+    flex-shrink: 0;
+    width: auto;
+    min-width: unset;
+
+    height: 38px;
+    min-height: 38px;
+    padding: 0 16px;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .text-button {
