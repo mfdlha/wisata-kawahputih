@@ -1,19 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Panduan wisata Kawah Putih di Ciwidey, Bandung: informasi danau kawah, daya tarik, galeri, tips kunjungan, dan lokasi.">
+  <meta name="description" content="Panduan wisata Kawah Putih di Ciwidey, Bandung: informasi danau kawah, daya tarik, galeri, tips kunjungan, dan lokasi.">
   <title>Kawah Putih Ciwidey | Panduan Wisata</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Pengaturan awal saat refresh -->
   <script>
@@ -62,7 +58,10 @@
     })();
   </script>
 
-  <link rel="preload" as="image" href="images/kawah.jpeg" fetchpriority="high">
+  <link rel="preload"
+        as="image"
+        href="images/kawah.jpeg"
+        fetchpriority="high">
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -74,21 +73,31 @@
   <header class="site-header">
     <div class="container header-inner">
 
-      <a class="brand" href="#beranda" aria-label="Kawah Putih, kembali ke beranda">
+      <a class="brand"
+         href="#beranda"
+         aria-label="Kawah Putih, kembali ke beranda">
         <span class="brand-name">KAWAH PUTIH</span>
-        <span class="brand-caption">CIWIDEY - BANDUNG</span>
+        <span class="brand-caption">CIWIDEY — BANDUNG</span>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Buka menu navigasi"
-        aria-controls="main-nav" aria-expanded="false">
+      <button class="menu-toggle"
+              id="menu-toggle"
+              type="button"
+              aria-label="Buka menu navigasi"
+              aria-controls="main-nav"
+              aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+      <nav class="main-nav"
+           id="main-nav"
+           aria-label="Navigasi utama">
 
-        <a class="nav-link is-active" href="#beranda" aria-current="page">Beranda</a>
+        <a class="nav-link is-active"
+           href="#beranda"
+           aria-current="page">Beranda</a>
 
         <a class="nav-link" href="#tentang">Tentang</a>
         <a class="nav-link" href="#jelajahi">Jelajahi</a>
@@ -101,43 +110,66 @@
         <a class="nav-link" href="#ulasan">Ulasan</a>
 
         <!-- Tombol khusus mobile -->
-        <button type="button" class="mobile-plan" data-open-planner>
+        <button type="button"
+                class="mobile-plan"
+                data-open-planner>
           Rencanakan Kunjungan
         </button>
 
         <div class="mobile-settings">
 
-          <button type="button" class="setting-button" data-theme-toggle aria-label="Mode gelap" title="Mode gelap">
-            <span class="theme-symbol" aria-hidden="true">☾</span>
+          <button type="button"
+                  class="setting-button"
+                  data-theme-toggle
+                  aria-label="Mode gelap"
+                  title="Mode gelap">
+            <span class="theme-symbol"
+                  aria-hidden="true">☾</span>
             <span class="setting-name">Tampilan</span>
           </button>
 
-          <button type="button" class="setting-button" data-language-toggle aria-label="Bahasa Indonesia atau Inggris"
-            title="Ganti bahasa">
+          <button type="button"
+                  class="setting-button"
+                  data-language-toggle
+                  aria-label="Bahasa Indonesia atau Inggris"
+                  title="Ganti bahasa">
             <span class="language-label">ID / EN</span>
           </button>
 
         </div>
       </nav>
 
-      <a class="button button-primary header-cta" href="#panduan">
+      <a class="button button-primary header-cta"
+         href="#panduan">
         Rencanakan Kunjungan
+        <span aria-hidden="true">↗</span>
       </a>
 
       <div class="header-tools">
 
-        <button type="button" class="setting-button" data-theme-toggle aria-label="Mode gelap" title="Mode gelap">
-          <span class="theme-symbol" aria-hidden="true">☾</span>
+        <button type="button"
+                class="setting-button"
+                data-theme-toggle
+                aria-label="Mode gelap"
+                title="Mode gelap">
+          <span class="theme-symbol"
+                aria-hidden="true">☾</span>
         </button>
 
-        <button type="button" class="setting-button" data-language-toggle aria-label="Bahasa Indonesia atau Inggris"
-          title="Ganti bahasa">
+        <button type="button"
+                class="setting-button"
+                data-language-toggle
+                aria-label="Bahasa Indonesia atau Inggris"
+                title="Ganti bahasa">
           <span class="language-label">ID / EN</span>
         </button>
 
-        <button type="button" class="mini-plan" data-open-planner>
+        <button type="button"
+                class="mini-plan"
+                data-open-planner>
           Rencana
         </button>
+
       </div>
 
     </div>
@@ -146,11 +178,14 @@
   <main>
 
     <!-- 02. BERANDA -->
-    <section class="hero section" id="beranda" aria-labelledby="hero-title">
+    <section class="hero section"
+             id="beranda"
+             aria-labelledby="hero-title">
 
       <div class="container hero-grid">
 
         <div class="hero-copy">
+
           <p class="eyebrow">
             CIWIDEY, KABUPATEN BANDUNG
           </p>
@@ -168,62 +203,84 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#jelajahi">
+
+            <a class="button button-primary"
+               href="#jelajahi">
               Jelajahi Kawah Putih
+              <span aria-hidden="true">↗</span>
             </a>
 
-            <a class="button button-secondary" href="#galeri">
+            <a class="button button-secondary"
+               href="#galeri">
               Lihat Galeri
+              <span aria-hidden="true">→</span>
             </a>
+
           </div>
 
           <p class="hero-note">
             Satu destinasi, beberapa sudut
             untuk dijelajahi.
           </p>
+
         </div>
 
         <figure class="hero-figure">
+
           <div class="media-frame media-frame-hero is-loading">
-            <img src="images/kawah.jpeg" alt="Panorama danau Kawah Putih dan perbukitan di kawasan Gunung Patuha"
-              fetchpriority="high">
+
+            <img src="images/kawah.jpeg"
+                 alt="Panorama danau Kawah Putih dan perbukitan di kawasan Gunung Patuha"
+                 fetchpriority="high">
 
             <span class="media-fallback" role="status">
               Foto panorama Kawah Putih belum tersedia.
             </span>
+
           </div>
 
           <figcaption>
-            *Panorama Kawah Putih
+            Panorama Kawah Putih —
             Ciwidey, Kabupaten Bandung
           </figcaption>
+
         </figure>
 
       </div>
     </section>
 
     <!-- 03. TENTANG -->
-    <section class="section section-about" id="tentang" aria-labelledby="about-title">
+    <section class="section section-about"
+             id="tentang"
+             aria-labelledby="about-title">
 
       <div class="container about-grid">
 
         <figure class="about-figure">
+
           <div class="media-frame media-frame-about is-loading">
-            <img src="images/danau_kawah.jpeg" alt="Danau vulkanik Kawah Putih dengan bentang alam di sekelilingnya"
-              loading="lazy">
+
+            <img src="images/danau_kawah.jpeg"
+                 alt="Danau vulkanik Kawah Putih dengan bentang alam di sekelilingnya"
+                 loading="lazy">
 
             <span class="media-fallback" role="status">
               Foto danau Kawah Putih belum tersedia.
             </span>
+
           </div>
 
           <figcaption>
             Danau kawah Gunung Patuha
           </figcaption>
+
         </figure>
 
         <div class="about-content">
-          <p class="eyebrow">MENGENAL DESTINASI</p>
+
+          <p class="eyebrow">
+            MENGENAL DESTINASI
+          </p>
 
           <h2 id="about-title">
             Mengenal Kawah Putih
@@ -247,8 +304,16 @@
           </p>
 
           <p class="location-label">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.8"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true"
+                 focusable="false">
               <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 16 0Z"></path>
               <circle cx="12" cy="10" r="2.5"></circle>
             </svg>
@@ -257,20 +322,28 @@
               Rancabali / Ciwidey,
               Kabupaten Bandung
             </span>
+
           </p>
+
         </div>
 
       </div>
     </section>
 
     <!-- 04. JELAJAHI -->
-    <section class="section section-attractions" id="jelajahi" aria-labelledby="attractions-title">
+    <section class="section section-attractions"
+             id="jelajahi"
+             aria-labelledby="attractions-title">
 
       <div class="container">
 
         <div class="section-heading">
+
           <div>
-            <p class="eyebrow">PILIH PENGALAMANMU</p>
+            <p class="eyebrow">
+              PILIH PENGALAMANMU
+            </p>
+
             <h2 id="attractions-title">
               Apa yang Ingin Kamu Lakukan?
             </h2>
@@ -280,16 +353,21 @@
             Kenali aktivitas, suasana, dan hal penting pada setiap
             area sebelum memilih tujuan kunjungan.
           </p>
+
         </div>
 
         <div class="experience-list">
 
           <!-- Danau Kawah -->
           <article class="experience-item">
-            <span class="experience-number" aria-hidden="true">01</span>
+
+            <span class="experience-number"
+                  aria-hidden="true">01</span>
 
             <div class="experience-main">
+
               <p class="card-label">PANORAMA DANAU</p>
+
               <h3>Danau Kawah</h3>
 
               <p class="experience-description">
@@ -297,22 +375,32 @@
                 dan suasana Kawah Putih dari area pengunjung yang diizinkan.
               </p>
 
-              <button class="text-button detail-trigger" type="button" data-detail="danau">
+              <button class="text-button detail-trigger"
+                      type="button"
+                      data-detail="danau">
                 Lihat Info &amp; Foto
                 <span aria-hidden="true">→</span>
               </button>
+
             </div>
 
             <div class="experience-facts">
+
               <div>
-                <p class="experience-fact-label">Cocok untuk</p>
+                <p class="experience-fact-label">
+                  Cocok untuk
+                </p>
+
                 <p class="experience-fact-text">
                   Menikmati lanskap dan fotografi alam.
                 </p>
               </div>
 
               <div>
-                <p class="experience-fact-label">Perlu diperhatikan</p>
+                <p class="experience-fact-label">
+                  Perlu diperhatikan
+                </p>
+
                 <p class="experience-fact-text">
                   Kawasan mengandung gas belerang. Tetap di jalur aman
                   dan ikuti arahan petugas.
@@ -321,20 +409,27 @@
 
               <details class="experience-tips">
                 <summary>Tips sebelum ke danau</summary>
+
                 <p>
                   Siapkan jaket, hindari menyentuh air kawah,
                   dan segera menjauh jika merasa tidak nyaman dengan udara sekitar.
                 </p>
               </details>
+
             </div>
+
           </article>
 
           <!-- Skywalk Cantigi -->
           <article class="experience-item">
-            <span class="experience-number" aria-hidden="true">02</span>
+
+            <span class="experience-number"
+                  aria-hidden="true">02</span>
 
             <div class="experience-main">
+
               <p class="card-label">JALUR PANDANG</p>
+
               <h3>Skywalk Cantigi</h3>
 
               <p class="experience-description">
@@ -342,22 +437,32 @@
                 melihat kawasan kawah dari sudut yang lebih tinggi.
               </p>
 
-              <button class="text-button detail-trigger" type="button" data-detail="skywalk">
+              <button class="text-button detail-trigger"
+                      type="button"
+                      data-detail="skywalk">
                 Lihat Info &amp; Foto
                 <span aria-hidden="true">→</span>
               </button>
+
             </div>
 
             <div class="experience-facts">
+
               <div>
-                <p class="experience-fact-label">Cocok untuk</p>
+                <p class="experience-fact-label">
+                  Cocok untuk
+                </p>
+
                 <p class="experience-fact-text">
                   Pengunjung yang menyukai berjalan kaki dan sudut pandang berbeda.
                 </p>
               </div>
 
               <div>
-                <p class="experience-fact-label">Perlu diperhatikan</p>
+                <p class="experience-fact-label">
+                  Perlu diperhatikan
+                </p>
+
                 <p class="experience-fact-text">
                   Kondisi jalur dan akses bisa berubah mengikuti cuaca
                   serta kebijakan pengelola.
@@ -366,20 +471,27 @@
 
               <details class="experience-tips">
                 <summary>Tips sebelum ke Skywalk</summary>
+
                 <p>
                   Gunakan alas kaki dengan daya cengkeram baik.
                   Tanyakan lebih dahulu apakah jalur dibuka dan aman dilalui.
                 </p>
               </details>
+
             </div>
+
           </article>
 
           <!-- Panorama Sunan Ibu -->
           <article class="experience-item">
-            <span class="experience-number" aria-hidden="true">03</span>
+
+            <span class="experience-number"
+                  aria-hidden="true">03</span>
 
             <div class="experience-main">
+
               <p class="card-label">TITIK PANDANG</p>
+
               <h3>Panorama Sunan Ibu</h3>
 
               <p class="experience-description">
@@ -387,22 +499,32 @@
                 Tempat ini dikenal sebagai salah satu sudut untuk menikmati suasana pagi.
               </p>
 
-              <button class="text-button detail-trigger" type="button" data-detail="sunan">
+              <button class="text-button detail-trigger"
+                      type="button"
+                      data-detail="sunan">
                 Lihat Info &amp; Foto
                 <span aria-hidden="true">→</span>
               </button>
+
             </div>
 
             <div class="experience-facts">
+
               <div>
-                <p class="experience-fact-label">Cocok untuk</p>
+                <p class="experience-fact-label">
+                  Cocok untuk
+                </p>
+
                 <p class="experience-fact-text">
                   Panorama pegunungan dan fotografi pemandangan luas.
                 </p>
               </div>
 
               <div>
-                <p class="experience-fact-label">Perlu diperhatikan</p>
+                <p class="experience-fact-label">
+                  Perlu diperhatikan
+                </p>
+
                 <p class="experience-fact-text">
                   Jika ingin melihat matahari terbit, konfirmasi akses pagi,
                   cuaca, dan aturan kunjungan lebih dahulu.
@@ -411,17 +533,21 @@
 
               <details class="experience-tips">
                 <summary>Tips sebelum ke Sunan Ibu</summary>
+
                 <p>
                   Bawa pakaian hangat dan periksa kondisi jalur.
                   Panorama dapat tertutup kabut sewaktu-waktu.
                 </p>
               </details>
+
             </div>
+
           </article>
 
         </div>
 
         <div class="experience-note">
+
           <p>
             <strong>Catatan kunjungan:</strong>
             akses lokasi, kemungkinan biaya tambahan,
@@ -432,189 +558,343 @@
           <a href="#panduan">
             Baca Panduan &amp; Lokasi ↗
           </a>
+
         </div>
 
       </div>
     </section>
 
     <!-- 05. GALERI -->
-    <section class="section section-gallery" id="galeri" aria-labelledby="gallery-title">
+    <section class="section section-gallery"
+             id="galeri"
+             aria-labelledby="gallery-title">
 
       <div class="container">
 
         <div class="section-heading">
+
           <div>
             <p class="eyebrow">GALERI FOTO</p>
-            <h2 id="gallery-title">Potret Kawah Putih</h2>
+
+            <h2 id="gallery-title">
+              Potret Kawah Putih
+            </h2>
           </div>
 
           <p>
             Jelajahi suasana danau, jalur, dan perbukitan
             melalui foto. Klik gambar untuk memperbesarnya.
           </p>
+
         </div>
 
-        <div class="gallery-filters" role="group" aria-label="Filter kategori galeri">
+        <div class="gallery-filters"
+             role="group"
+             aria-label="Filter kategori galeri">
 
-          <button class="filter-button is-selected" type="button" data-filter="semua" aria-pressed="true">
+          <button class="filter-button is-selected"
+                  type="button"
+                  data-filter="semua"
+                  aria-pressed="true">
             Semua
           </button>
 
-          <button class="filter-button" type="button" data-filter="danau" aria-pressed="false">
+          <button class="filter-button"
+                  type="button"
+                  data-filter="danau"
+                  aria-pressed="false">
             Danau
           </button>
 
-          <button class="filter-button" type="button" data-filter="panorama" aria-pressed="false">
+          <button class="filter-button"
+                  type="button"
+                  data-filter="panorama"
+                  aria-pressed="false">
             Panorama
           </button>
 
-          <button class="filter-button" type="button" data-filter="jalur" aria-pressed="false">
+          <button class="filter-button"
+                  type="button"
+                  data-filter="jalur"
+                  aria-pressed="false">
             Jalur Wisata
           </button>
+
         </div>
 
         <div class="gallery-grid">
 
           <!-- Galeri 1 -->
-          <figure class="gallery-item" data-category="danau">
-            <button class="gallery-open" type="button" data-image="images/galeri-1.jpg"
-              data-title="Tepi danau Kawah Putih" data-alt="Lanskap tepian danau Kawah Putih"
-              aria-label="Perbesar foto tepi danau Kawah Putih">
+          <figure class="gallery-item"
+                  data-category="danau">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-1.jpg"
+                    data-title="Tepi danau Kawah Putih"
+                    data-alt="Lanskap tepian danau Kawah Putih"
+                    aria-label="Perbesar foto tepi danau Kawah Putih">
+
               <span class="media-frame is-loading">
-                <img src="images/galeri-1.jpg" alt="Lanskap tepian danau Kawah Putih" loading="lazy">
+
+                <img src="images/galeri-1.jpg"
+                     alt="Lanskap tepian danau Kawah Putih"
+                     loading="lazy">
+
                 <span class="media-fallback">
                   Foto galeri belum tersedia.
                 </span>
+
               </span>
+
             </button>
 
             <figcaption>
               Tepi danau
               <span>Danau</span>
             </figcaption>
+
           </figure>
 
           <!-- Galeri 2 -->
-          <figure class="gallery-item" data-category="danau">
-            <button class="gallery-open" type="button" data-image="images/galeri-2.jpg"
-              data-title="Warna air Kawah Putih" data-alt="Danau Kawah Putih dengan air pucat"
-              aria-label="Perbesar foto warna air Kawah Putih">
+          <figure class="gallery-item"
+                  data-category="danau">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-2.jpg"
+                    data-title="Warna air Kawah Putih"
+                    data-alt="Danau Kawah Putih dengan air pucat"
+                    aria-label="Perbesar foto warna air Kawah Putih">
+
               <span class="media-frame is-loading">
-                <img src="images/galeri-2.jpg" alt="Danau Kawah Putih dengan air pucat" loading="lazy">
+
+                <img src="images/galeri-2.jpg"
+                     alt="Danau Kawah Putih dengan air pucat"
+                     loading="lazy">
+
                 <span class="media-fallback">
                   Foto galeri belum tersedia.
                 </span>
+
               </span>
+
             </button>
 
             <figcaption>
               Warna air kawah
               <span>Danau</span>
             </figcaption>
+
           </figure>
 
           <!-- Galeri 3 -->
-          <figure class="gallery-item" data-category="jalur">
-            <button class="gallery-open" type="button" data-image="images/galeri-3.jpg"
-              data-title="Jalur menuju kawasan kawah" data-alt="Jalur akses menuju Kawah Putih"
-              aria-label="Perbesar foto jalur menuju kawah">
+          <figure class="gallery-item"
+                  data-category="jalur">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-3.jpg"
+                    data-title="Jalur menuju kawasan kawah"
+                    data-alt="Jalur akses menuju Kawah Putih"
+                    aria-label="Perbesar foto jalur menuju kawah">
+
               <span class="media-frame is-loading">
-                <img src="images/galeri-3.jpg" alt="Jalur akses menuju Kawah Putih" loading="lazy">
+
+                <img src="images/galeri-3.jpg"
+                     alt="Jalur akses menuju Kawah Putih"
+                     loading="lazy">
+
                 <span class="media-fallback">
                   Foto galeri belum tersedia.
                 </span>
+
               </span>
+
             </button>
 
             <figcaption>
               Jalur menuju kawah
               <span>Jalur Wisata</span>
             </figcaption>
+
           </figure>
 
           <!-- Galeri 4 -->
-          <figure class="gallery-item" data-category="panorama">
-            <button class="gallery-open" type="button" data-image="images/galeri-4.jpg"
-              data-title="Panorama dari Sunan Ibu" data-alt="Panorama alam dari kawasan Sunan Ibu"
-              aria-label="Perbesar foto panorama dari Sunan Ibu">
+          <figure class="gallery-item"
+                  data-category="panorama">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/galeri-4.jpg"
+                    data-title="Panorama dari Sunan Ibu"
+                    data-alt="Panorama alam dari kawasan Sunan Ibu"
+                    aria-label="Perbesar foto panorama dari Sunan Ibu">
+
               <span class="media-frame is-loading">
-                <img src="images/galeri-4.jpg" alt="Panorama alam dari kawasan Sunan Ibu" loading="lazy">
+
+                <img src="images/galeri-4.jpg"
+                     alt="Panorama alam dari kawasan Sunan Ibu"
+                     loading="lazy">
+
                 <span class="media-fallback">
                   Foto galeri belum tersedia.
                 </span>
+
               </span>
+
             </button>
 
             <figcaption>
               Pemandangan Sunan Ibu
               <span>Panorama</span>
             </figcaption>
+
           </figure>
 
           <!-- Galeri 5 -->
-          <figure class="gallery-item" data-category="panorama">
-            <button class="gallery-open" type="button" data-image="images/hero-kawah-putih.jpg"
-              data-title="Lanskap Kawah Putih" data-alt="Panorama luas danau Kawah Putih"
-              aria-label="Perbesar foto lanskap Kawah Putih">
+          <figure class="gallery-item"
+                  data-category="panorama">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/hero-kawah-putih.jpg"
+                    data-title="Lanskap Kawah Putih"
+                    data-alt="Panorama luas danau Kawah Putih"
+                    aria-label="Perbesar foto lanskap Kawah Putih">
+
               <span class="media-frame is-loading">
-                <img src="images/hero-kawah-putih.jpg" alt="Panorama luas danau Kawah Putih" loading="lazy">
+
+                <img src="images/hero-kawah-putih.jpg"
+                     alt="Panorama luas danau Kawah Putih"
+                     loading="lazy">
+
                 <span class="media-fallback">
                   Foto galeri belum tersedia.
                 </span>
+
               </span>
+
             </button>
 
             <figcaption>
               Lanskap kawah
               <span>Panorama</span>
             </figcaption>
+
           </figure>
 
           <!-- Galeri 6 -->
-          <figure class="gallery-item" data-category="panorama">
-            <button class="gallery-open" type="button" data-image="images/sunan-ibu.jpg" data-title="Kabut di Sunan Ibu"
-              data-alt="Pemandangan berkabut di Panorama Sunan Ibu" aria-label="Perbesar foto kabut di Sunan Ibu">
+          <figure class="gallery-item"
+                  data-category="panorama">
+
+            <button class="gallery-open"
+                    type="button"
+                    data-image="images/sunan-ibu.jpg"
+                    data-title="Kabut di Sunan Ibu"
+                    data-alt="Pemandangan berkabut di Panorama Sunan Ibu"
+                    aria-label="Perbesar foto kabut di Sunan Ibu">
+
               <span class="media-frame is-loading">
-                <img src="images/sunan-ibu.jpg" alt="Pemandangan berkabut di Panorama Sunan Ibu" loading="lazy">
+
+                <img src="images/sunan-ibu.jpg"
+                     alt="Pemandangan berkabut di Panorama Sunan Ibu"
+                     loading="lazy">
+
                 <span class="media-fallback">
                   Foto galeri belum tersedia.
                 </span>
+
               </span>
+
             </button>
 
             <figcaption>
               Kabut pegunungan
               <span>Panorama</span>
             </figcaption>
+
           </figure>
 
         </div>
 
-        <p class="gallery-status" id="gallery-status" role="status" aria-live="polite">
+        <p class="gallery-status"
+           id="gallery-status"
+           role="status"
+           aria-live="polite">
           Menampilkan 6 item galeri.
         </p>
 
         <a class="review-jump" href="#ulasan">
           Lihat Ulasan →
         </a>
+
+        <!-- =====================================
+             VIDEO KAWAH PUTIH
+             Materi Pemrograman Web Pertemuan 2
+        ====================================== -->
+
+        <div style="margin-top: 36px;">
+
+          <p class="eyebrow">VIDEO</p>
+
+          <h3 style="color: var(--forest); margin-bottom: 16px;">
+            Lanskap Kawah Putih
+          </h3>
+
+          <video controls
+                 width="1200"
+                 height="675"
+                 poster="images/kawah.jpeg"
+                 preload="none"
+                 playsinline
+                 style="display: block;
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 16 / 9;
+                        object-fit: contain;
+                        background: #101a17;
+                        border-radius: 7px;">
+
+            <source src="images/kawah-putih.mp4"
+                    type="video/mp4">
+
+            Browser tidak mendukung video.
+            Your browser does not support video.
+
+          </video>
+
+        </div>
+
+        <!-- AKHIR VIDEO KAWAH PUTIH -->
+
       </div>
     </section>
 
     <!-- 06. PANDUAN DAN LOKASI -->
-    <section class="section section-guide" id="panduan" aria-labelledby="guide-title">
+    <section class="section section-guide"
+             id="panduan"
+             aria-labelledby="guide-title">
 
       <div class="container">
 
         <div class="section-heading">
+
           <div>
-            <p class="eyebrow">RENCANAKAN KUNJUNGAN</p>
-            <h2 id="guide-title">Sebelum Berkunjung</h2>
+            <p class="eyebrow">
+              RENCANAKAN KUNJUNGAN
+            </p>
+
+            <h2 id="guide-title">
+              Sebelum Berkunjung
+            </h2>
           </div>
 
           <p>
             Informasi praktis untuk membantu
             menyiapkan perjalanan menuju Kawah Putih.
           </p>
+
         </div>
 
         <div class="guide-grid">
@@ -622,7 +902,9 @@
           <div class="guide-main">
 
             <div class="guide-block">
+
               <h3>Lokasi dan akses</h3>
+
               <p>
                 Kawah Putih berada di kawasan
                 Rancabali/Ciwidey, Kabupaten Bandung.
@@ -631,39 +913,71 @@
                 sebelum mengikuti petunjuk
                 menuju kawasan wisata.
               </p>
+
             </div>
 
             <div class="guide-block">
+
               <h3>Tiket dan jam operasional</h3>
+
               <p>
                 Harga tiket dan jam operasional
                 dapat berubah. Pastikan informasi
                 terbaru melalui pengelola wisata
                 sebelum berkunjung.
               </p>
+
             </div>
 
             <div class="guide-block">
+
               <h3>Tips berkunjung</h3>
 
               <ul class="tips-list">
-                <li>Gunakan pakaian hangat dan alas kaki yang nyaman.</li>
-                <li>Perhatikan cuaca, kabut, dan kondisi jalur.</li>
-                <li>Ikuti petunjuk keselamatan serta batasan dari pengelola.</li>
-                <li>Hindari terlalu lama berada di area dengan paparan gas belerang.</li>
-                <li>Jaga kebersihan dan jangan membuang sampah sembarangan.</li>
+
+                <li>
+                  Gunakan pakaian hangat dan alas kaki yang nyaman.
+                </li>
+
+                <li>
+                  Perhatikan cuaca, kabut, dan kondisi jalur.
+                </li>
+
+                <li>
+                  Ikuti petunjuk keselamatan serta batasan dari pengelola.
+                </li>
+
+                <li>
+                  Hindari terlalu lama berada di area dengan paparan gas belerang.
+                </li>
+
+                <li>
+                  Jaga kebersihan dan jangan membuang sampah sembarangan.
+                </li>
+
               </ul>
+
             </div>
 
           </div>
 
-          <aside class="faq-panel" aria-labelledby="faq-title">
+          <!-- FAQ -->
+          <aside class="faq-panel"
+                 aria-labelledby="faq-title">
 
-            <p class="eyebrow">PERTANYAAN UMUM</p>
-            <h3 id="faq-title">Yang perlu diketahui</h3>
+            <p class="eyebrow">
+              PERTANYAAN UMUM
+            </p>
+
+            <h3 id="faq-title">
+              Yang perlu diketahui
+            </h3>
 
             <details>
-              <summary>Apakah harus membawa jaket?</summary>
+              <summary>
+                Apakah harus membawa jaket?
+              </summary>
+
               <p>
                 Disarankan membawa jaket atau
                 pakaian hangat karena area Kawah Putih
@@ -672,7 +986,10 @@
             </details>
 
             <details>
-              <summary>Apakah harga tiket selalu sama?</summary>
+              <summary>
+                Apakah harga tiket selalu sama?
+              </summary>
+
               <p>
                 Belum tentu. Periksa tarif terkini
                 melalui informasi resmi pengelola
@@ -681,7 +998,10 @@
             </details>
 
             <details>
-              <summary>Bagaimana jika cuaca berkabut?</summary>
+              <summary>
+                Bagaimana jika cuaca berkabut?
+              </summary>
+
               <p>
                 Perhatikan jarak pandang,
                 tetap di jalur yang diizinkan,
@@ -690,7 +1010,10 @@
             </details>
 
             <details>
-              <summary>Apakah perlu memperhatikan gas belerang?</summary>
+              <summary>
+                Apakah perlu memperhatikan gas belerang?
+              </summary>
+
               <p>
                 Ya. Ikuti informasi keselamatan
                 setempat dan segera menjauh
@@ -699,14 +1022,23 @@
             </details>
 
           </aside>
+
         </div>
 
         <!-- GOOGLE MAPS -->
-        <div class="location-panel" id="lokasi" aria-labelledby="location-title">
+        <div class="location-panel"
+             id="lokasi"
+             aria-labelledby="location-title">
 
           <div>
-            <p class="eyebrow">LOKASI DESTINASI</p>
-            <h3 id="location-title">Temukan Lokasinya</h3>
+
+            <p class="eyebrow">
+              LOKASI DESTINASI
+            </p>
+
+            <h3 id="location-title">
+              Temukan Lokasinya
+            </h3>
 
             <p>
               <strong>Kawah Putih</strong><br>
@@ -720,33 +1052,45 @@
               mencari lokasi dan menentukan
               rute dari tempat keberangkatanmu.
             </p>
+
           </div>
 
           <a class="button button-primary"
-            href="https://www.google.com/maps/search/?api=1&amp;query=Kawah%20Putih%20Ciwidey%20Bandung" target="_blank"
-            rel="noopener noreferrer">
+             href="https://www.google.com/maps/search/?api=1&amp;query=Kawah%20Putih%20Ciwidey%20Bandung"
+             target="_blank"
+             rel="noopener noreferrer">
             Buka Google Maps
             <span aria-hidden="true">↗</span>
           </a>
+
         </div>
 
       </div>
     </section>
 
     <!-- 07. ULASAN DAN RATING -->
-    <section class="section section-reviews" id="ulasan" aria-labelledby="review-title">
+    <section class="section section-reviews"
+             id="ulasan"
+             aria-labelledby="review-title">
 
       <div class="container">
 
         <div class="section-heading">
+
           <div>
-            <p class="eyebrow">ULASAN PENGUNJUNG</p>
-            <h2 id="review-title">Cerita Kunjungan</h2>
+            <p class="eyebrow">
+              ULASAN PENGUNJUNG
+            </p>
+
+            <h2 id="review-title">
+              Cerita Kunjungan
+            </h2>
           </div>
 
           <p>
             Bagikan pengalaman dan tips setelah mengunjungi Kawah Putih.
           </p>
+
         </div>
 
         <div class="reviews-layout">
@@ -754,14 +1098,22 @@
           <div class="review-results">
 
             <div class="rating-overview">
-              <strong id="rating-average" class="rating-average">—</strong>
+
+              <strong id="rating-average"
+                      class="rating-average">—</strong>
 
               <div>
-                <div id="rating-average-stars" class="rating-stars" aria-hidden="true">☆☆☆☆☆</div>
+
+                <div id="rating-average-stars"
+                     class="rating-stars"
+                     aria-hidden="true">☆☆☆☆☆</div>
+
                 <p id="review-count">
                   Belum ada penilaian
                 </p>
+
               </div>
+
             </div>
 
             <p class="review-disclaimer">
@@ -769,66 +1121,112 @@
               dan tidak dikirim ke server.
             </p>
 
-            <div id="review-list" class="review-list" aria-live="polite"></div>
+            <div id="review-list"
+                 class="review-list"
+                 aria-live="polite"></div>
+
           </div>
 
-          <form id="review-form" class="review-form">
+          <form id="review-form"
+                class="review-form">
 
             <h3>Tulis ulasan</h3>
 
             <label class="review-field">
+
               <span>Nama panggilan</span>
-              <input type="text" id="review-name" name="nama" minlength="2" maxlength="30" required
-                autocomplete="nickname" placeholder="Nama panggilan">
+
+              <input type="text"
+                     id="review-name"
+                     name="nama"
+                     minlength="2"
+                     maxlength="30"
+                     required
+                     autocomplete="nickname"
+                     placeholder="Nama panggilan">
+
             </label>
 
             <fieldset class="review-rating">
+
               <legend>Penilaian kamu</legend>
 
-              <div class="star-options" id="star-options">
+              <div class="star-options"
+                   id="star-options">
 
                 <label>
-                  <input type="radio" name="rating" value="1" required aria-label="1 bintang">
+                  <input type="radio"
+                         name="rating"
+                         value="1"
+                         required
+                         aria-label="1 bintang">
                   <span>★</span>
                 </label>
 
                 <label>
-                  <input type="radio" name="rating" value="2" aria-label="2 bintang">
+                  <input type="radio"
+                         name="rating"
+                         value="2"
+                         aria-label="2 bintang">
                   <span>★</span>
                 </label>
 
                 <label>
-                  <input type="radio" name="rating" value="3" aria-label="3 bintang">
+                  <input type="radio"
+                         name="rating"
+                         value="3"
+                         aria-label="3 bintang">
                   <span>★</span>
                 </label>
 
                 <label>
-                  <input type="radio" name="rating" value="4" aria-label="4 bintang">
+                  <input type="radio"
+                         name="rating"
+                         value="4"
+                         aria-label="4 bintang">
                   <span>★</span>
                 </label>
 
                 <label>
-                  <input type="radio" name="rating" value="5" aria-label="5 bintang">
+                  <input type="radio"
+                         name="rating"
+                         value="5"
+                         aria-label="5 bintang">
                   <span>★</span>
                 </label>
 
               </div>
+
             </fieldset>
 
             <label class="review-field">
+
               <span>Ceritakan pengalamanmu</span>
-              <textarea id="review-message" name="ulasan" minlength="15" maxlength="400" required rows="4"
-                placeholder="Ceritakan pengalamanmu"></textarea>
+
+              <textarea id="review-message"
+                        name="ulasan"
+                        minlength="15"
+                        maxlength="400"
+                        required
+                        rows="4"
+                        placeholder="Ceritakan pengalamanmu"></textarea>
+
             </label>
 
-            <button class="button button-primary" type="submit">
+            <button class="button button-primary"
+                    type="submit">
               Kirim ulasan
             </button>
 
-            <p id="review-status" class="review-status" role="status" aria-live="polite"></p>
+            <p id="review-status"
+               class="review-status"
+               role="status"
+               aria-live="polite"></p>
+
           </form>
 
         </div>
+
       </div>
     </section>
 
@@ -840,35 +1238,34 @@
     <div class="container footer-grid">
 
       <div>
-        <p class="footer-brand">KAWAH PUTIH</p>
+
+        <p class="footer-brand">
+          KAWAH PUTIH
+        </p>
+
         <p>
           Website informasi wisata Kawah Putih
           di kawasan Ciwidey,
           Kabupaten Bandung.
         </p>
-        <p>
-        <div class="footer-team">
-          <h4>Kelompok 5</h4>
-          <ul>
-            <li>Muhamad Akbar Febiansyah</li>
-            <li>Muhammad Azis</li>
-            <li>Muhammad Fadhillah Akbar</li>
-          </ul>
-        </div>
-        </p>
+
       </div>
 
       <div>
+
         <h2>Navigasi</h2>
+
         <a href="#beranda">Beranda</a>
         <a href="#tentang">Tentang</a>
         <a href="#jelajahi">Jelajahi</a>
         <a href="#galeri">Galeri</a>
         <a href="#panduan">Panduan &amp; Lokasi</a>
         <a href="#ulasan">Ulasan</a>
+
       </div>
 
       <div>
+
         <h2>Informasi</h2>
 
         <p>
@@ -886,90 +1283,143 @@
           Periksa informasi tiket, jam operasional,
           dan kondisi kawasan sebelum berkunjung.
         </p>
+
       </div>
 
     </div>
 
     <div class="container footer-bottom">
+
       <span>
         © 2026 Kawah Putih. Pesona Alam Ciwidey.
       </span>
+
       <span>
         Informasi destinasi dapat berubah
         mengikuti kondisi dan kebijakan kawasan.
       </span>
+
     </div>
 
   </footer>
 
   <!-- 09. RENCANAKAN KUNJUNGAN -->
-  <dialog class="site-dialog planner-dialog" id="visit-planner-dialog" aria-labelledby="planner-title">
+  <dialog class="site-dialog planner-dialog"
+          id="visit-planner-dialog"
+          aria-labelledby="planner-title">
 
     <div class="planner-content">
 
-      <button class="dialog-close" type="button" data-close-dialog aria-label="Tutup perencana kunjungan">
+      <button class="dialog-close"
+              type="button"
+              data-close-dialog
+              aria-label="Tutup perencana kunjungan">
         ×
       </button>
 
-      <p class="eyebrow">PERSIAPKAN PERJALANAN</p>
-      <h2 id="planner-title">Rencanakan Kunjungan</h2>
+      <p class="eyebrow">
+        PERSIAPKAN PERJALANAN
+      </p>
+
+      <h2 id="planner-title">
+        Rencanakan Kunjungan
+      </h2>
 
       <p class="planner-description">
         Pilih tanggal, waktu, dan tempat yang ingin dijelajahi.
         Kami akan menyusun ringkasan rencana kunjunganmu.
       </p>
 
-      <form id="planner-form" class="planner-form">
+      <form id="planner-form"
+            class="planner-form">
 
         <div class="planner-row">
 
           <label class="planner-field">
+
             <span>Tanggal kunjungan</span>
-            <input type="date" id="planner-date" name="tanggal" required>
+
+            <input type="date"
+                   id="planner-date"
+                   name="tanggal"
+                   required>
+
           </label>
 
           <label class="planner-field">
+
             <span>Waktu pilihan</span>
 
             <select id="planner-time" name="waktu">
               <option value="pagi">Pagi</option>
               <option value="siang">Siang</option>
             </select>
+
           </label>
 
         </div>
 
         <fieldset class="planner-options">
-          <legend>Tempat yang ingin dikunjungi</legend>
+
+          <legend>
+            Tempat yang ingin dikunjungi
+          </legend>
 
           <label class="planner-choice">
-            <input type="checkbox" name="destinasi" value="danau" checked>
+
+            <input type="checkbox"
+                   name="destinasi"
+                   value="danau"
+                   checked>
+
             <span>Danau Kawah</span>
+
           </label>
 
           <label class="planner-choice">
-            <input type="checkbox" name="destinasi" value="skywalk" checked>
+
+            <input type="checkbox"
+                   name="destinasi"
+                   value="skywalk"
+                   checked>
+
             <span>Skywalk Cantigi</span>
+
           </label>
 
           <label class="planner-choice">
-            <input type="checkbox" name="destinasi" value="sunan">
+
+            <input type="checkbox"
+                   name="destinasi"
+                   value="sunan">
+
             <span>Panorama Sunan Ibu</span>
+
           </label>
+
         </fieldset>
 
-        <button type="submit" class="button button-primary planner-submit">
+        <button type="submit"
+                class="button button-primary planner-submit">
           Buat Rencana Kunjungan
         </button>
 
-        <p id="planner-error" class="planner-error" role="alert" hidden></p>
+        <p id="planner-error"
+           class="planner-error"
+           role="alert"
+           hidden></p>
 
       </form>
 
-      <div id="planner-result" class="planner-result" tabindex="-1" hidden>
+      <div id="planner-result"
+           class="planner-result"
+           tabindex="-1"
+           hidden>
 
         <h3>Ringkasan Rencana</h3>
+
         <p id="planner-summary"></p>
+
         <ol id="planner-list"></ol>
 
         <p class="planner-note">
@@ -977,57 +1427,95 @@
           Periksa kondisi cuaca, akses wisata, tiket,
           dan jam operasional sebelum berangkat.
         </p>
+
       </div>
+
     </div>
   </dialog>
 
   <!-- 10. MODAL DETAIL -->
-  <dialog class="site-dialog" id="detail-dialog" aria-labelledby="detail-title">
+  <dialog class="site-dialog"
+          id="detail-dialog"
+          aria-labelledby="detail-title">
 
     <div class="dialog-content">
 
-      <button class="dialog-close" type="button" data-close-dialog aria-label="Tutup detail wisata">×</button>
+      <button class="dialog-close"
+              type="button"
+              data-close-dialog
+              aria-label="Tutup detail wisata">
+        ×
+      </button>
 
-      <div class="media-frame dialog-image is-error" id="detail-image-frame">
+      <div class="media-frame dialog-image is-error"
+           id="detail-image-frame">
+
         <img id="detail-image" alt="">
+
         <span class="media-fallback" role="status">
           Foto detail belum tersedia.
         </span>
+
       </div>
 
       <div class="dialog-text">
-        <p class="card-label" id="detail-category"></p>
+
+        <p class="card-label"
+           id="detail-category"></p>
+
         <h2 id="detail-title"></h2>
+
         <p id="detail-description"></p>
+
       </div>
+
     </div>
+
   </dialog>
 
   <!-- 11. LIGHTBOX GALERI -->
-  <dialog class="site-dialog gallery-dialog" id="gallery-dialog" aria-labelledby="gallery-dialog-title">
+  <dialog class="site-dialog gallery-dialog"
+          id="gallery-dialog"
+          aria-labelledby="gallery-dialog-title">
 
     <div class="dialog-content">
 
-      <button class="dialog-close" type="button" data-close-dialog aria-label="Tutup foto galeri">×</button>
+      <button class="dialog-close"
+              type="button"
+              data-close-dialog
+              aria-label="Tutup foto galeri">
+        ×
+      </button>
 
-      <div class="media-frame dialog-image is-error" id="gallery-image-frame">
+      <div class="media-frame dialog-image is-error"
+           id="gallery-image-frame">
+
         <img id="gallery-dialog-image" alt="">
+
         <span class="media-fallback" role="status">
           Foto galeri belum tersedia.
         </span>
+
       </div>
 
       <div class="dialog-text">
+
         <h2 id="gallery-dialog-title"></h2>
+
       </div>
+
     </div>
+
   </dialog>
 
   <!-- 12. KEMBALI KE ATAS -->
-  <button class="back-to-top" id="back-to-top" type="button" aria-label="Kembali ke atas" hidden>
+  <button class="back-to-top"
+          id="back-to-top"
+          type="button"
+          aria-label="Kembali ke atas"
+          hidden>
     ↑
   </button>
 
 </body>
-
 </html>
